@@ -1,70 +1,46 @@
-Chips Customer Segmentation Analysis
+🧠 Chips Customer Segmentation Analysis
 
-Overview
-This project supports analyze customer purchasing behavior in the chip category. The goal is to assist the supermarket's Category Manager in understanding customer segments and driving strategic planning for the next six months.
+📋 Overview
 
-The analysis involves cleaning transaction and customer data, segmenting customers, identifying trends, and visualizing purchasing behavior.
+This project analyzes customer purchasing behavior in the chip category. The goal is to assist the supermarket's Category Manager in understanding customer segments and driving strategic planning for the next six months.
 
-Objectives
-Data Cleaning: Identify and resolve inconsistencies, null values, and outliers in transaction and customer data.
+🎯 Objectives
 
-Exploratory Data Analysis: Visualize transaction patterns, product characteristics (brand, pack size), and purchasing trends.
+🧹 Data Cleaning: Identify and resolve inconsistencies, null values, and outliers.
+📊 Exploratory Data Analysis: Visualize transaction patterns and product characteristics.
+👥 Customer Segmentation: Segment by lifestage and premium customer status.
+💰 Sales Analysis: Assess sales value, unit quantity, and pricing sensitivity.
+📐 Statistical Testing: Perform t-tests to compare segment behaviors.
+💡 Insights & Recommendations: Pinpoint high-value customer segments.
 
-Customer Segmentation: Analyze purchasing behavior by lifestage and premium customer status.
+📁 Dataset
 
-Sales Analysis: Assess total sales, unit quantities, and price sensitivity across customer groups.
+QVI_transaction_data.csv – Transaction-level data (products, sales, customer ID).
+QVI_purchase_behaviour.csv – Customer demographics (lifestage, premium status).
 
-Statistical Testing: Use t-tests to evaluate pricing behavior differences between segments.
+🔧 Key Steps
 
-Insights and Recommendations: Identify target customer segments for marketing and product strategies.
+📥 Load & Inspect Data using pandas.
+🧽 Clean Data
+Filter chip-related products.
+Remove outliers and nulls.
+Standardize brand names and extract pack sizes.
+📈 Visualize purchase patterns, demographics, and product features.
+🔗 Merge & Analyze datasets to find segment-level trends.
+🧪 T-Tests for price behavior differences.
+📌 Recommendations based on sales contribution and opportunity areas.
 
-Dataset
-QVI_transaction_data.csv: Contains transactional information such as product name, quantity, sales, and customer ID.
+💻 Technologies Used
 
-QVI_purchase_behaviour.csv: Contains demographic information including lifestage and premium status of customers.
+🐍 Python
 
-Key Steps
-Load & Inspect Data
-Read and explore transaction and customer datasets using pandas.
+pandas, numpy – Data manipulation
+matplotlib, seaborn – Visualization
+scipy.stats – Statistical analysis
 
-Clean Data
+📦 Outputs
 
-Convert date fields.
-
-Remove non-chip items (e.g., salsa).
-
-Handle outliers in product quantity.
-
-Extract and standardize brand and pack size data.
-
-Visualizations
-
-Transaction trends over time.
-
-Lifestage distribution.
-
-Sales and customer metrics segmented by demographics.
-
-Average units and price per customer segment.
-
-Merge & Analyze
-Combine transaction and customer data, then perform segment-level analysis.
-
-Statistical Testing
-Conduct t-tests to compare price sensitivity among different customer groups.
-
-Recommendations
-Identify key customer segments (e.g., mainstream young couples) for targeted marketing.
-
-Technologies Used
-Python
-Libraries: pandas, numpy, matplotlib, seaborn, scipy
-
-Outputs
-Cleaned datasets (CSV)
-
-Visualizations (PNG/Plots)
-
-Summary statistics and customer insights
-
-Recommendations for strategic decision-making
+✅ Cleaned datasets
+📊 Insightful plots and visualizations
+📝 Segment summaries and customer profiles
+🧭 Strategic recommendations for targeting
