@@ -1,4 +1,5 @@
 Chips Customer Segmentation Analysis
+
 Overview
 This project supports analyze customer purchasing behavior in the chip category. The goal is to assist the supermarket's Category Manager in understanding customer segments and driving strategic planning for the next six months.
 
